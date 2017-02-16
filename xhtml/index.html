@@ -9,20 +9,30 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title></title>
         <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script>
+            function verSenha() {
+                var btnSenha = document.getElementById('senha');
+
+                var btnVersenha = document.getElementById('btn-ver');
+
+                if (btnSenha.type == "text") {
+
+                    btnSenha.type = "password";
+                    btnVersenha.value = "Ver Senha";
+
+                } else {
+                    btnSenha.type = "text";
+                    btnVersenha.value = "Ocutar Senha";
+                }
+            }
+        </script>
     </head>
-    <form>
+    <form class="from">
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome"/>
-        <label for="sexo">Sexo</label>
-        <select id="sexo" name="sexo">
-            <option>Sexo</option>
-            <option>Masculino</option>
-            <option>Feminino</option>
-        </select>
-        <label for="idade">Idade</label>
-        <input name="idade" id="idade" type="text">
-        <label for="humano">Humano</label>
-        <input type="checkbox" id="humano" name="humano" value="1">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha"/>
+        <input value="ver senha" type="button" onclick="verSenha();" id="btn-ver">
         <button class="btn">enviar</button>
     </form>
 </body>
