@@ -6,34 +6,19 @@ and open the template in the editor.
 -->
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script type="text/javascript">
-        function maior() {
-            var cp1 = Number(document.getElementById("campo1").value),
-                cp2 = Number(document.getElementById("campo2").value),
-                cp3 = Number(document.getElementById("campo3").value),
-                resultado = document.getElementById("resultado");
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="../js/maior.js"></script>
+    </head>
 
-            if (cp1 > cp2 && cp1 > cp3) {
-                resultado.innerHTML = 'O maior é: ' + cp1;
-            } else if (cp2 > cp1 && cp2 > cp3) {
-                resultado.innerHTML = 'O maior é: ' + cp2;
-            } else if (cp3 > cp1 && cp3 > cp2) {
-                resultado.innerHTML = 'O maior é: ' + cp3;
-            }
-        }
-    </script>
-</head>
-
-<body>
-    <input type="number" value="" id="campo1" placeholder="valor 1">
-    <input type="number" value="" id="campo2" placeholder="valor 2">
-    <input type="number" value="" id="campo3" placeholder="valor 3"><br/>
-    <input type="button" onclick="maior()" class="btn" value="Maior">
-    <span id="resultado"></span>
-</body>
+    <body>
+        <input type="number" value="" id="campo1" placeholder="valor 1">
+        <input type="number" value="" id="campo2" placeholder="valor 2">
+        <input type="number" value="" id="campo3" placeholder="valor 3"><br/>
+        <input type="button" onclick="maior()" class="btn" value="Maior">
+        <span id="resultado"></span>
+    </body>
 
 </html>

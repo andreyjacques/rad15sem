@@ -1,20 +1,18 @@
 #resultado{
-height: 50px;
-padding: 0 20px;
-border: 1px solid #DDD;
-margin: 20px 0;
-position: relative;
-left: 50%;
-transform: translateX(-50%);
-float: left;
-line-height: 50px;
-display: block;
-}
-
-body{
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #DDD;
+    margin: 20px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     float: left;
-}
-.btn{
+    line-height: 50px;
     display: block;
-    margin: 20px auto;
+}
+ol li a{
+    color: blue;
+}
+ol li a:hover{
+    color: red;
 }

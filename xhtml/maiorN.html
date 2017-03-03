@@ -10,13 +10,14 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title></title>
         <link rel="stylesheet" type="text/css" href="../css/style.css">
-        <script src="../js/introducao.js"></script>
-    </head>
+        <script src="../js/maior.js"></script>
 
     <body>
-        <div id="area">Texto Aleatorio</div>
-        <input type="text" value="" id="txt">
-        <input type="button" onclick="trocarTexto()" value="alterar valor">
+        <input type="number" id="qtd"/>
+        <input type="button" onclick="gerar()" id="btn-gerar" value="Criar campo">
+        <div id="form"></div>
+        <input type="button" value="Comparar" onclick="comparar()">
+        <span id="r"></span>
     </body>
 
 </html>
